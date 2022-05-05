@@ -7,6 +7,7 @@ body{
 h1{
     font-size: 36px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -25,27 +26,62 @@ span {
     width: 150px;
     height: 200px;
     padding-top: 10px;
+    border-radius: 33%;
+}
+
+.container {
+    box-shadow: 0 0 20px grey;
+    width: 1030px;
+    margin: 0 auto 0 auto;
+    background-color: white;
 }
 
 section, header {
     padding: 10px 60px 20px 60px;
-    background-color: white;
-    width: 960px;
-    margin: 0 auto 0 auto;
+    
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 60px;
 }
 
 header ul {
     list-style: none;
 }
 
-header li {
+li {
     margin-bottom: 5px;
+}
+
+.Podział {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+
+.skills {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+
+.skills li {
+    margin: 8px;
+    transition: color 1s font-weight 1s;
+}
+
+.skills li:hover{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.Umiejetnosci {
+    margin-left: 36%;
 }
 
 .address-icon {
@@ -92,6 +128,7 @@ p {
     margin-top: 20px;
     border-radius: 26px;
     transition: background-color 0.5s, color 0.5s;
+    box-shadow: 0 0 20px grey;
 }
 
 .cv-download-link:hover {
@@ -108,4 +145,49 @@ p {
 .cv-download-link:active {
     text-decoration: underline;
     color: blue;
+}
+
+.technologie {
+    color: grey;
+    font-size: 17px;
+    transition: font-size 0.5s;
+}
+
+.technologie:hover {
+    color: black;
+    font-size: 18px;
+}
+
+.projekty-div {
+    display: flex;
+}
+
+.Github {
+    margin-left:55%;
+    border: 2px solid cornflowerblue;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 35px;
+    border-radius: 0%;
+    transition: background-color 0.5s, color 0.5s;
+    box-shadow: 0 0 10px grey;
+    font-weight: bold;
+}
+
+.Github:hover {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.Github:focus {
+    outline: none;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.projects h3:hover {
+    font-weight: bolder;
+    color: cornflowerblue;
 }
